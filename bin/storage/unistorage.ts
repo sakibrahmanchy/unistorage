@@ -1,6 +1,6 @@
-export default abstract class storage {
+export default abstract class unistorage {
     protected config;
-    constructor(config) {
+    protected constructor(config) {
         this.config = config;
     }
 

@@ -5,12 +5,9 @@ var lessMiddleware = require('less-middleware');
 var logger = require('morgan');
 var fs = require("fs");
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-
 var app = express();
 
-var files = fs.readdirSync('./routes');
+var routes = require('./bin/routes');
 
 app.use(logger('dev'));
 app.use(express.json());
@@ -18,12 +15,5 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(lessMiddleware(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
-
-for(let file of files) {
-    var route_name = file.toString().replace(".js","");
-    var routerContents = require('./routes/'+route_name);
-    app.use("/"+route_name, routerContents);
-    console.log('here');
-}
-
+app.use('/', routes);
 module.exports = app;

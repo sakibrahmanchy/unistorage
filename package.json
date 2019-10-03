@@ -3,10 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "precommit": "lint-staged",
     "start": "npm run build:live",
     "build": "tsc -p .",
-    "build:live": "nodemon --watch 'bin/**/*.ts' --exec ts-node app.js"
+    "build:live": "nodemon --exec ts-node bin/www.ts"
   },
   "lint-staged": {
     "{src,test}/**/*.ts*": [
@@ -15,10 +14,13 @@
     ]
   },
   "dependencies": {
+    "axios": "^0.19.0",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",
+    "google-auth-library": "^5.3.0",
     "googleapis": "^39.2.0",
+    "gtoken": "^4.1.0",
     "less-middleware": "~2.2.1",
     "morgan": "~1.9.1",
     "typescript": "^3.6.3"

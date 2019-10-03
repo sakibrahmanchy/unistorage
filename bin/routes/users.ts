@@ -1,6 +1,7 @@
-var express = require('express');
+import express from "express";
+import Gdrive from "../storage/google-drive/Gdrive";
+
 var router = express.Router();
-var Gdrive = require('../bin/storage/Gdrive.ts')
 /* GET users listing. */
 router.get('/', function(req, res, next) {
   const config = {

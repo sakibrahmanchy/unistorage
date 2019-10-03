@@ -6,7 +6,7 @@
 /storage/*
 /storage/framework/
 .key
-
+/build
 /vendor
 /
 .idea

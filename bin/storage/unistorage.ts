@@ -1,10 +1,5 @@
-export default abstract class unistorage {
-    protected config;
-    protected constructor(config) {
-        this.config = config;
-    }
-
-    abstract connect();
-    abstract createDirectory(metadata);
-    abstract uploadFile(metadata);
+export default interface unistorage {
+    listFiles();
+    createDirectory(directory_name, parents);
+    uploadFile(metadata);
 }

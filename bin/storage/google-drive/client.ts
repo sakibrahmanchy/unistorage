@@ -67,6 +67,19 @@ export default class Client {
             }).then((response:Response) => {
                return response;
             });
+        } else if (request.method === 'POST') {
+            try {
+                return await axios.post<Response>(request.url, request.options.body, {
+                    headers: {
+                        Authorization: `Bearer ${this.tokens.access_token}`
+                    },
+                }).then((response:Response) => {
+                    return response;
+                });
+            } catch (e) {
+                console.log('error');
+                console.log(e.message);
+            }
         }
     }
 }

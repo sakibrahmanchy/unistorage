@@ -3,13 +3,12 @@
     "target": "es6",       // NodeJs v8.9.3 supports most of the es6 features
     "pretty": true,
     "module": "commonjs",
-    "outDir": "dist",
-    "esModuleInterop": true
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "declaration": true
   },
-  "include": [
-    "bin/**/*.ts"
-  ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "dist"
   ]
 }

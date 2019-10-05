@@ -16,7 +16,7 @@
   "author": "Sakibur Rahaman Chowdhury",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sakibrahmanchy/unistorage/issues"
+    "url": "https://github.com/sakibrahmanchy/unistorage/issues",
   },
   "homepage": "https://github.com/sakibrahmanchy/unistorage#readme"
   "types": "dist/index.d.ts",

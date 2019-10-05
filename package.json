@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/sakibrahmanchy/unistorage/issues",
   },
-  "homepage": "https://github.com/sakibrahmanchy/unistorage#readme"
+  "homepage": "https://github.com/sakibrahmanchy/unistorage#readme",
   "types": "dist/index.d.ts",
   "scripts": {
     "start": "npm run build",

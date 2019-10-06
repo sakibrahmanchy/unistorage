@@ -1,6 +1,24 @@
 {
   "name": "unistorage",
   "version": "0.0.9",
+  "description": "A simple storage management system for multiple file storage providers",
+  "main": "dist/index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sakibrahmanchy/unistorage.git"
+  },
+  "keywords": [
+    "storage"
+  ],
+  "author": "Sakibur Rahaman Chowdhury",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sakibrahmanchy/unistorage/issues",
+  },
+  "homepage": "https://github.com/sakibrahmanchy/unistorage#readme",
   "types": "dist/index.d.ts",
   "scripts": {
     "start": "npm run build",
@@ -43,22 +61,4 @@
     "tslint": "^5.20.0",
     "tslint-config-airbnb": "^5.11.2"
   },
-  "description": "A simple storage management system for multiple file storage providers",
-  "main": "dist/index.js",
-  "directories": {
-    "test": "tests"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sakibrahmanchy/unistorage.git"
-  },
-  "keywords": [
-    "storage"
-  ],
-  "author": "Sakibur Rahaman Chowdhury",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sakibrahmanchy/unistorage/issues"
-  },
-  "homepage": "https://github.com/sakibrahmanchy/unistorage#readme"
 }

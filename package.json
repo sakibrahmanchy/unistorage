@@ -16,7 +16,7 @@
   "author": "Sakibur Rahaman Chowdhury",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sakibrahmanchy/unistorage/issues",
+    "url": "https://github.com/sakibrahmanchy/unistorage/issues"
   },
   "homepage": "https://github.com/sakibrahmanchy/unistorage#readme",
   "types": "dist/index.d.ts",
@@ -60,5 +60,5 @@
     "ts-node": "^8.4.1",
     "tslint": "^5.20.0",
     "tslint-config-airbnb": "^5.11.2"
-  },
+  }
 }

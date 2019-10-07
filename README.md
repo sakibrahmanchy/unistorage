@@ -9,18 +9,20 @@ in a single platform.
 Run `npm install unistorage`
 
 ## Usage
-#####Typescript
+##### Typescript
+
 `import { unistorage } from unistorge;`
 
 `const storage = unistorge('google-drive');'`
 
-#####Regular
+##### Regular
 
 `var { unistorage } = require('unistorage');`
 
 `var storage = unistorge('google-drive');'`
 
-#####Implementation
+##### Implementation
+
 `//storage.ListFiles().then()....`
 
 `//storage.createDirectory().then()....`
